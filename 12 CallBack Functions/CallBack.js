@@ -29,8 +29,19 @@ function greet(name, callBack){
     callBack();
 }
 
-function callMe(){
-    console.log("This is callBack");
+function callChiiku(){
+    console.log("Haan !!, Baby Bolo -1");
+}
+function callShalini(){
+    console.log("Haan !!, Baby Bolo -2");
+}
+function callKandy(){
+    console.log("Haan !!, Baby Bolo -3");
 }
 
-greet("Kshitiz",callMe);
+// So like this, aapko jisko call lagana, usko pass kardo, greet function mai change karne ki zarurat nhi
+// speedial...hehehe
+
+greet("Kshitiz",callChiiku);
+greet("Kshitiz",callShalini);
+greet("Kshitiz",callKandy);
