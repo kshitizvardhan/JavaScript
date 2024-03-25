@@ -11,12 +11,12 @@ console.log(arr)    // Output [ 1, 2, 3 ]
 
 // Removing the first element from array
 arr.shift();
-console.log(arr);
+console.log(arr);   // Output [ 2, 3 ]
 
 // Pushing an element to the front of an array
 arr.unshift(1);
-console.log(arr);
+console.log(arr);   // Output [ 1, 2, 3 ]
 
 // Joining two arrays - it creates a new array (So, its not done by reference)
 const result = arr.concat(arr2);
-console.log(result);
+console.log(result);    // Output [ 1, 2, 3, 4, 5, 6 ]
