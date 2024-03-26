@@ -3,6 +3,10 @@ const axios = require('axios');
 axios.get('https://randomuser.me/api/')
     .then(response => {                     // parameter named 'response' or any other name you prefer.
         console.log(response.data);         // parameter.data   --> .data property specifically holds the response data returned from the   server. It is specific to Axios and may not be available in other HTTP client libraries or environments.
+        
+        /* const data = JSON.parse(response.data);
+        console.log(data); */
+        // No need to parse as, Axios automatically parses the response body for you, so response.data contains the parsed JSON object.
     })
     .catch(error => {
         console.error('Error:', error);
