@@ -64,7 +64,8 @@ const path = require('path');
 
 const filePath = path.join(__dirname, "file.txt");
 
-function readFile() {
+// My own asynchronous function
+function kshitizReadFile() {
     return new Promise(function(resolve, reject) {
         fs.readFile(filePath, "utf-8", function(err, data) {
             if (err) {
@@ -76,7 +77,7 @@ function readFile() {
     });
 }
 
-readFile()
+kshitizReadFile()
     .then((response) => {
         console.log(response);
     })
