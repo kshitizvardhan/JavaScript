@@ -34,7 +34,6 @@ console.log("END-2");   // when control reaches here and gets free, then the con
 
 
 
-
 /* 
 
 require("path"): This line imports the built-in Node.js path module, which provides utilities for working with file paths.
